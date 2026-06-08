@@ -1,38 +1,309 @@
-<!DOCTYPE html>
-<html lamg="zh-TW">
+```html
+<!doctype html>
+<html lang="zh-Hant">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewpot" content="width=device-width,initial-scale=1" />
-  <title>demol</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>探索胡志明市</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Microsoft JhengHei",sans-serif;
+    background:#f5f5f5;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    padding:15px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.banner{
+    height:500px;
+    background:url("images/hochiminh-banner.jpg") center center;
+    background-size:cover;
+}
+
+.section{
+    padding:60px 0;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#333;
+}
+
+.about{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.about img{
+    width:45%;
+    border-radius:10px;
+}
+
+.about-text{
+    width:55%;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.news{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.news-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.news-card h3{
+    margin-bottom:10px;
+    color:#0d6efd;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.service-box{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+.contact{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    line-height:2;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.about{
+    flex-direction:column;
+}
+
+.about img,
+.about-text{
+    width:100%;
+}
+
+.news,
+.services,
+.gallery{
+    grid-template-columns:1fr;
+}
+
+nav ul{
+    flex-direction:column;
+}
+}
+</style>
 </head>
+
 <body>
-  <h1>舒華回台參加AAA!一到機場「撞衫星巴克店員」網笑瘋：上班get同款</h1>
-  <hr>
-<p>AAA頒獎典禮（Asia Artist Awards）首次移師台灣舉辦，今（6）日將於高雄世運主場館舉行。
-  眾多韓星5日陸續抵台，小港機場擠滿接機粉絲。女團i-dle台灣成員舒華將擔任第二天《ACON 2025》主持人，一下機就耐不住炎熱天氣脫下外套，
-    沒想到卻意外和機場星巴克員工撞衫，讓粉絲全笑翻。</p>
-  <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1RODyc.img?w=612&h=816&m=6&x=283&y=277&s=194&d=194"width="600" height"400">
-  
-  <br>
-  
-<pre> 舒華5日以紅色背心搭配緊身白色透膚上衣亮相，除了展現完美身材曲線，她「白到曝光」的雪白肌膚也成為全場焦點，
-  一抵達小港機場便狂掀粉絲尖叫。有趣的是，有粉絲意外拍到舒華與一名星巴克員工同框的畫面，只見店員穿著白襯衫、紅色圍裙，
-  乍看之下與舒華的穿搭有幾分相似，讓粉絲忍不住笑稱：「葉舒華怎麼撞衫」、「上個班get葉舒華同款圍裙」。
-</pre>
 
- <img src="SuChi.jpg"width="600" height"400">  
-  <br>
-  
-<p>舒華5日以紅色背心搭配緊身白色透膚上衣亮相，除了展現完美身材曲線，她「白到曝光」的雪白肌膚也成為全場焦點，
-  一抵達小港機場便狂掀粉絲尖叫。有趣的是，有粉絲意外拍到舒華與一名星巴克員工同框的畫面，只見店員穿著白襯衫、紅色圍裙，
-  乍看之下與舒華的穿搭有幾分相似，讓粉絲忍不住笑稱：「葉舒華怎麼撞衫」、「上個班get葉舒華同款圍裙」。</p>
-  <img src="SuChi2.jpg"width="600" height"400">  
+<header>
+<div class="container">
 
-  <a href="https://www.msn.com/zh-tw/entertainment/news/%E8%88%92%E8%8F%AF%E5%9B%9E%E5%8F%B0%E5%8F%83%E5%8A%A0aaa-
-    %E4%B8%80%E5%88%B0%E6%A9%9F%E5%A0%B4-%E6%92%9E%E8%A1%AB%E6%98%9F%E5%B7%B4%E5%85%8B%E5%BA%97%E5%93%A1-
-    %E7%B6%B2%E7%AC%91%E7%98%8B-%E4%B8%8A%E7%8F%ADget%E5%90%8C%E6%AC%BE/ar-AA1ROSDH?ocid=hpmsn&cvid=6937c864a24b4517a037226dd0829dca&ei=12"target="_blank">orginal NEWS</a>
-    
-  </body>
-  </html>
+<div class="logo">🇻🇳 探索胡志明市</div>
+
+<nav>
+<ul>
+<li><a href="#">首頁</a></li>
+<li><a href="#">熱門景點</a></li>
+<li><a href="#">旅遊攻略</a></li>
+<li><a href="#">特色美食</a></li>
+<li><a href="#">照片集</a></li>
+<li><a href="#">聯絡我們</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<div class="banner"></div>
+
+<section class="section">
+<div class="container">
+
+<h2>關於胡志明市</h2>
+
+<div class="about">
+
+<img src="images/about.jpg" alt="胡志明市">
+
+<div class="about-text">
+<p>
+胡志明市（Ho Chi Minh City）是越南最大的城市，
+也是越南經濟與文化中心。
+這裡融合了法式殖民建築、現代摩天大樓、
+特色咖啡文化與豐富的越南美食，
+每年吸引數百萬名旅客前來探索。
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>熱門景點</h2>
+
+<div class="news">
+
+<div class="news-card">
+<h3>聖母大教堂</h3>
+<p>胡志明市最具代表性的紅磚法式建築。</p>
+</div>
+
+<div class="news-card">
+<h3>中央郵局</h3>
+<p>百年歷史地標，充滿法國殖民風情。</p>
+</div>
+
+<div class="news-card">
+<h3>濱城市場</h3>
+<p>體驗越南文化與購買伴手禮的最佳地點。</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>必訪景點</h2>
+
+<div class="services">
+
+<div class="service-box">
+<h3>統一宮</h3>
+</div>
+
+<div class="service-box">
+<h3>戰爭遺跡博物館</h3>
+</div>
+
+<div class="service-box">
+<h3>阮惠步行街</h3>
+</div>
+
+<div class="service-box">
+<h3>西貢河夜遊</h3>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>景點照片</h2>
+
+<div class="gallery">
+<img src="images/p1.jpg" alt="">
+<img src="images/p2.jpg" alt="">
+<img src="images/p3.jpg" alt="">
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>旅遊資訊</h2>
+
+<div class="contact">
+<p>📍 城市：胡志明市（Ho Chi Minh City）</p>
+<p>🌤 最佳旅遊時間：12月至4月</p>
+<p>✈ 國際機場：新山一國際機場</p>
+<p>💰 貨幣：越南盾（VND）</p>
+<p>🕒 時區：GMT+7</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Explore Ho Chi Minh City. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+```
+
 
